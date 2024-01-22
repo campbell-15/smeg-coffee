@@ -90,6 +90,7 @@ nav a {
     border: 1px solid #ddd; /* Add a subtle border for aesthetics */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .product-name {
@@ -110,4 +111,16 @@ nav a {
 
 .gallery-item:hover .product-name {
     opacity: 1; /* Show product name on hover */
+}
+
+.products-heading {
+    display: inline-block;
+    justify-content: center;
+    width: 43%;
+    text-align: center;
+    background-color: beige;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
