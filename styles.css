@@ -6,17 +6,33 @@ body {
     text-align: center;
 }
 
-nav {
-    background-color: beige;
-    display: flex;
-    justify-content: space-around;
-    padding: 8px;
-    border: 1px solid grey;
+html {
+    scroll-behavior: smooth;
 }
 
-nav a {
+.topnav {
+    background-color: beige;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.topnav a {
+    float: left;
     color: black;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: cadetblue;
+    color: white;
 }
 
 .image-cards {
@@ -85,9 +101,9 @@ nav a {
 }
 
 .product-image {
-    width: 100%; /* Ensure images take up the full width of their container */
+    width: 100%; 
     height: auto;
-    border: 1px solid #ddd; /* Add a subtle border for aesthetics */
+    border: 1px solid #ddd; 
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -106,11 +122,11 @@ nav a {
 }
 
 .gallery-item:hover .product-image {
-    transform: scale(1.1); /* Enlarge image on hover */
+    transform: scale(1.1); 
 }
 
 .gallery-item:hover .product-name {
-    opacity: 1; /* Show product name on hover */
+    opacity: 1; 
 }
 
 .products-heading {
